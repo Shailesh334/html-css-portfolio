@@ -1,3 +1,9 @@
+:root {
+    --color-accent: #5eead4;
+    --background-accent: rgba(45, 212, 191, .1);
+    --color-highlight: #e2e8f0;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,4 +15,19 @@ body{
     background: #0f172a;
     color: #94a3b8;
     padding: 1rem;
+}
+
+.underlay{
+    position: fixed;
+    inset: 0;
+    background-color:  #172554;
+    opacity: 0.15;
+}
+
+header,main , footer {
+    position: relative;
+    z-index: 10;
+}
+header h1{
+    color: var(--color-highlight);
 }

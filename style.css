@@ -76,7 +76,11 @@ header h4 {
   font-weight: 500;
 }
 
-main,
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -155,7 +159,8 @@ section {
   text-decoration: none;
 }
 .experience-content a h4:hover,
-.project-content a h4:hover{
+.project-content a h4:hover,
+.anchor-text:hover{
   color: var(--color-accent);
   cursor: pointer;
 }
@@ -174,4 +179,48 @@ section {
   background-color: #033e3d;
   outline: none;
   border: none;
+}
+
+.view-full-container{
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  transition: 200ms;
+}
+.view-full {
+  text-decoration: none;
+  position: relative;
+  
+  
+}
+
+.view-full-container span{
+  transition: 200ms;
+}
+
+.view-full-container:hover span{
+  padding-left: 1rem;
+}
+
+
+
+.view-full::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 100;
+  background-color: transparent;
+  transition: 200ms;
+  
+}
+
+.view-full:hover::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--color-accent);
 }

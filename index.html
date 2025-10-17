@@ -24,161 +24,174 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top-of-page">
     <div class="underlay"></div>
-    <header>
-      <a href=""><h1>Shailesh Gurle</h1></a>
-      <h4>Full Stack Developer</h4>
-      <p>I build scalable full stack applications.</p>
-      <nav>
-        <a><p>About</p></a>
-        <a><p>Projects</p></a>
-        <a><p>Experience</p></a>
-      </nav>
-      <nav>
-        <a>ICON</a>
-        <a>ICON</a>
-        <a>ICON</a>
-        <a>ICON</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="light-text">
-          <h2>ABOUT</h2>
-        </div>
-        <div id="about-info">
-          <p>
-            I’m Shailesh Gurle. I’m pursuing a Bachelor of Engineering in
-            Information Technology at D.Y. Patil College of Engineering with a
-            CGPA of 8.5.My core skills are in C++, JavaScript, Node.js, React,
-            and databases like MongoDB and MySQL.
-          </p>
 
-          <p>
-            I’ve built projects like Netflix GPT, which combines TMDB APIs with
-            a GPT-powered search, and TripNest, a travel listings web app using
-            the MERN stack with authentication and image uploads.
-          </p>
+      <header>
+        <a href=""><h1>Shailesh Gurle</h1></a>
+        <h4>Full Stack Developer</h4>
+        <p>I build scalable full stack applications.</p>
+        <nav>
+          <a><p>About</p></a>
+          <a><p>Projects</p></a>
+          <a><p>Experience</p></a>
+        </nav>
+        <nav>
+          <a>ICON</a>
+          <a>ICON</a>
+          <a>ICON</a>
+          <a>ICON</a>
+        </nav>
+      </header>
 
-          <p>
-            I enjoy working on scalable web applications and improving my
-            development skills through hands-on projects.I’ve gained practical
-            experience in building scalable and user-focused applications, and
-            I’m eager to apply my skills to solve real-world problems.
-          </p>
-        </div>
-      </section>
+      <main>
+        <!-- ABOUT -->
+        <section>
+          <div class="light-text">
+            <h2>ABOUT</h2>
+          </div>
+          <div id="about-info">
+            <p>
+              I’m Shailesh Gurle. I’m pursuing a Bachelor of Engineering in
+              Information Technology at D.Y. Patil College of Engineering with a
+              CGPA of 8.5.My core skills are in C++, JavaScript, Node.js, React,
+              and databases like MongoDB and MySQL.
+            </p>
 
-      <section>
-        <div class="light-text">
-          <h2>PROJECTS</h2>
-        </div>
+            <p>
+              I’ve built projects like Netflix GPT, which combines TMDB APIs with
+              a GPT-powered search, and TripNest, a travel listings web app using
+              the MERN stack with authentication and image uploads.
+            </p>
 
-        <div class="project-container">
-          <div class="project-card">
-            <div class="project-image-container">
-              <img src="/public/travelstay.png" alt="travel-stay thumbnail" />
+            <p>
+              I enjoy working on scalable web applications and improving my
+              development skills through hands-on projects.I’ve gained practical
+              experience in building scalable and user-focused applications, and
+              I’m eager to apply my skills to solve real-world problems.
+            </p>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+          <div class="light-text">
+            <h2>PROJECTS</h2>
+          </div>
+
+          <div class="project-container">
+            <div class="project-card">
+              <div class="project-image-container">
+                <img src="/public/travelstay.png" alt="travel-stay thumbnail" />
+              </div>
+
+              <div class="project-content">
+                <a href=""><h4 class="light-text anchor-text">Travel Stay ↗</h4></a>
+                <p>
+                  A full stack travel accommodation application that uses a NodeJS
+                  backend, a Prisma ORM , a PostgreSQL database and JWT
+                  Authentication.Role based acces, add , edit and delete listings
+                  as well as reviews for listings.
+                </p>
+                <a href="https://github.com/Shailesh334/tarvel-stay" target="_blank">ICON </a>
+                <div class="tags">
+                  <button>React</button>
+                  <button>NodeJS</button>
+                  <button>Prisma</button>
+                  <button>PostgreSQL</button>
+                  <button>ExpressJS</button>
+                </div>
+              </div>
             </div>
 
-            <div class="project-content">
-              <a href=""><h4 class="light-text anchor-text">Travel Stay ↗</h4></a>
-              <p>
-                A full stack travel accommodation application that uses a NodeJS
-                backend, a Prisma ORM , a PostgreSQL database and JWT
-                Authentication.Role based acces, add , edit and delete listings
-                as well as reviews for listings.
-              </p>
-              <a href="https://github.com/Shailesh334/tarvel-stay" target="_blank">ICON </a>
-              <div class="tags">
-                <button>React</button>
-                <button>NodeJS</button>
-                <button>Prisma</button>
-                <button>PostgreSQL</button>
-                <button>ExpressJS</button>
+            <div class="project-card">
+              <div class="project-image-container">
+                <img src="/public/netflixgpt.png" alt="netflix-gpt thumbnail" />
+              </div>
+
+              <div class="project-content">
+                <h4 class="light-text anchor-text">Netflix GPT ↗</h4>
+                <p>
+                  A full-stack Netflix clone powered by React, Firebase, Redux,
+                  and TMDB API, featuring user authentication, personalized movie
+                  recommendations, and a GPT-based movie search. Integrated
+                  Firebase Auth for sign-up/sign-in, Redux slices for global state
+                  management, and custom hooks for fetching TMDB data (now
+                  playing, trailers, categories). Includes multi-language support,
+                  responsive UI with Tailwind CSS, and deployment on Firebase
+                  Hosting.
+                </p>
+                <a href="/">ICON </a>
+                <div class="tags">
+                  <button>React</button>
+                  <button>Firebase</button>
+                  <button>Redux</button>
+                  <button>TailwindCSS</button>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="project-card">
-            <div class="project-image-container">
-              <img src="/public/netflixgpt.png" alt="netflix-gpt thumbnail" />
-            </div>
-
-            <div class="project-content">
-              <h4 class="light-text anchor-text">Netflix GPT ↗</h4>
-              <p>
-                A full-stack Netflix clone powered by React, Firebase, Redux,
-                and TMDB API, featuring user authentication, personalized movie
-                recommendations, and a GPT-based movie search. Integrated
-                Firebase Auth for sign-up/sign-in, Redux slices for global state
-                management, and custom hooks for fetching TMDB data (now
-                playing, trailers, categories). Includes multi-language support,
-                responsive UI with Tailwind CSS, and deployment on Firebase
-                Hosting.
-              </p>
-              <a href="/">ICON </a>
-              <div class="tags">
-                <button>React</button>
-                <button>Firebase</button>
-                <button>Redux</button>
-                <button>TailwindCSS</button>
-              </div>
-            </div>
+          <div class="view-full-container">
+            <a href="/" class="light-text view-full"><p>View Full Project Archive   </p> </a> <span> &rarr;</span>
           </div>
-        </div>
-        <div class="view-full-container">
-          <a href="/" class="light-text view-full"><p>View Full Project Archive   </p> </a> <span> &rarr;</span>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="light-text">
-          <h2>EXPERIENCE</h2>
-        </div>
+        <!-- EXPERIENCE -->
+        <section>
+          <div class="light-text">
+            <h2>EXPERIENCE</h2>
+          </div>
 
-        <div class="experience-container">
-          <div class="experience-card">
+          <div class="experience-container">
+            <div class="experience-card">
+                
+
+                <div class="experience-content">
               
 
-              <div class="experience-content">
-            
-
-                <div class="experience-card">
-                  <div class="tenure">
-                    <p>2024 - present</p>
-                  </div>
-
-                  <div class="experience-content">
-                    <h4 class="light-text anchor-text">Commander at cpmc DYPCOE Akurdi ↗</h4>
-                    <p>
-                      Facilitated post-contest discussions , Coderooms, analyzing
-                      problem-solving approaches, debugging solutions, and enhancing
-                      the team’s understanding of efficient algorithms which enhanced
-                      my teamwork skills. - Led a team of 6 members, fostering a
-                      collaborative environment by guiding them through DSA concepts
-                      and helping them improve their problem-solving skills..
-                    </p>
-                    <div class="tags">
-                      <button>Competetive Programming</button>
-                      <button>DSA</button>
-                      <button>React</button>
+                  <div class="experience-card">
+                    <div class="tenure">
+                      <p>2024 - 2025</p>
                     </div>
-                  </div>
-              </div>
 
-            <div class="view-full-container">
-              <a href="/" class="light-text view-full"><p>View Full Résumé   </p> </a> <span> &rarr;</span>
-            </div>
+                    <div class="experience-content">
+                      <h4 class="light-text anchor-text">Commander at cpmc DYPCOE Akurdi ↗</h4>
+                      <p>
+                        Facilitated post-contest discussions , Coderooms, analyzing
+                        problem-solving approaches, debugging solutions, and enhancing
+                        the team’s understanding of efficient algorithms which enhanced
+                        my teamwork skills. - Led a team of 6 members, fostering a
+                        collaborative environment by guiding them through DSA concepts
+                        and helping them improve their problem-solving skills..
+                      </p>
+                      <div class="tags">
+                        <button>Competetive Programming</button>
+                        <button>DSA</button>
+                        <button>React</button>
+                      </div>
+                    </div>
+                </div>
+
+              <div class="view-full-container">
+                <a href="/" class="light-text view-full"><p>View Full Résumé   </p> </a> <span> &rarr;</span>
               </div>
-      </section>
-    </main>
+                </div>
+        </section>
+
+      </main>
+
+
     <footer>
       <p>
-        Loosely designed in Figma and coded in Visual Studio Code by yours
-        truly. Built with HTML and CSS, deployed with Netlify. All text is set
-        in the Inter typeface.
+            Coded in <a href="https://code.visualstudio.com/" target="_blank" class="footer-link">Visual Studio Code</a>
+            by yours truly. <br />Built with HTML & CSS, and
+            deployed with <a href="https://www.netlify.com" target="_blank" class="footer-link">Netlify</a>. <br />All
+            Text is
+            set in the <a href="https://rsms.me/inter/" target="_blank" class="footer-link">Inter</a> typeface.
       </p>
+      <a href="#top-of-page" class="scroll-to-top">
+         <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </footer>
   </body>
 </html>

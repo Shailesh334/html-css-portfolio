@@ -23,30 +23,51 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+   <!-- For all icons -->
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
+
+<!-- For free icons -->
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/free.min.css">
   </head>
   <body id="top-of-page">
     <div class="underlay"></div>
 
       <header>
-        <a href=""><h1>Shailesh Gurle</h1></a>
-        <h4>Full Stack Developer</h4>
-        <p>I build scalable full stack applications.</p>
-        <nav>
-          <a><p>About</p></a>
-          <a><p>Projects</p></a>
-          <a><p>Experience</p></a>
+        
+           <a href="#body"><h1>Shailesh Gurle</h1></a>
+           <h4>Full Stack Developer</h4>
+        
+
+        <p>I handle both the front-end (client-side, what users see) and back-end (server-side, databases, and APIs) of web applications.</p>
+
+        <nav class="navigation-links">
+          <a href="#about" class="anchor-text light-text"><p>About</p></a>
+          <a href="#projects" class="anchor-text light-text"><p>Projects</p></a>
+          <a href="#experience" class="anchor-text light-text"><p>Experience</p></a>
         </nav>
         <nav>
-          <a>ICON</a>
-          <a>ICON</a>
-          <a>ICON</a>
-          <a>ICON</a>
+          <div class="social-link-container">
+            <a class="social-link" href="https://www.linkedin.com/in/shailesh334/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="social-link" href="https://github.com/Shailesh334/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="social-link" href="https://leetcode.com/u/shailesh_334/" target="_blank">
+                <i class="cib-leetcode"></i>
+
+            </a>
+            <a class="social-link" href="https://www.X.com/gurleshailesh/" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
         </nav>
       </header>
 
-      <main>
+      <main class="main-col">
         <!-- ABOUT -->
-        <section>
+        <section id="about">
           <div class="light-text sticky-header">
             <h2>ABOUT</h2>
           </div>
@@ -57,7 +78,10 @@
               CGPA of 8.5.My core skills are in C++, JavaScript, Node.js, React,
               and databases like MongoDB and MySQL.
             </p>
-
+            <p>I’ve built projects like Travel Stay ,full stack travel accommodation application that uses a NodeJS
+                  backend, a Prisma ORM , a PostgreSQL database and JWT
+                  Authentication.Role based acces, add , edit and delete listings
+                  as well as reviews for listings.</p>
             <p>
               I’ve built projects like Netflix GPT, which combines TMDB APIs with
               a GPT-powered search, and TripNest, a travel listings web app using
@@ -74,7 +98,7 @@
         </section>
 
         <!-- PROJECTS -->
-        <section>
+        <section id="projects">
           <div class="light-text sticky-header">
             <h2>PROJECTS</h2>
           </div>
@@ -85,15 +109,23 @@
                 <img src="/public/travelstay.png" alt="travel-stay thumbnail" />
               </div>
 
-              <div class="project-content">
-                <a href=""><h4 class="light-text anchor-text">Travel Stay ↗</h4></a>
+              <div class="project-content card-column">
+                <h4 class="light-text anchor-text">Travel Stay <i
+                                    class="fa-solid fa-arrow-right anchor-icon"></i></h4>
                 <p>
                   A full stack travel accommodation application that uses a NodeJS
                   backend, a Prisma ORM , a PostgreSQL database and JWT
                   Authentication.Role based acces, add , edit and delete listings
                   as well as reviews for listings.
                 </p>
-                <a href="https://github.com/Shailesh334/tarvel-stay" target="_blank">ICON </a>
+                 <div class="project-links">
+                 <a class="anchor-text view-full" href="https://github.com/Shailesh334/travel-stay" target="_blank">
+                    Github
+                </a>
+                 <a class="anchor-text view-full" href="https://travel-stay-we3s.onrender.com/" target="_blank">
+                    Live
+                </a>
+                </div>
                 <div class="tags">
                   <button>React</button>
                   <button>NodeJS</button>
@@ -109,19 +141,23 @@
                 <img src="/public/netflixgpt.png" alt="netflix-gpt thumbnail" />
               </div>
 
-              <div class="project-content">
-                <h4 class="light-text anchor-text">Netflix GPT ↗</h4>
+              <div class="project-content card-column">
+                <h4 class="light-text anchor-text">Netflix GPT <i
+                                    class="fa-solid fa-arrow-right anchor-icon"></i></h4>
                 <p>
                   A full-stack Netflix clone powered by React, Firebase, Redux,
                   and TMDB API, featuring user authentication, personalized movie
-                  recommendations, and a GPT-based movie search. Integrated
-                  Firebase Auth for sign-up/sign-in, Redux slices for global state
-                  management, and custom hooks for fetching TMDB data (now
-                  playing, trailers, categories). Includes multi-language support,
-                  responsive UI with Tailwind CSS, and deployment on Firebase
-                  Hosting.
+                  recommendations, and a GPT-based movie search. 
                 </p>
-                <a href="/">ICON </a>
+                
+                <div class="project-links">
+                 <a class="anchor-text view-full" href="https://github.com/Shailesh334/netflix-gpt" target="_blank">
+                    Github
+                </a>
+                 <a class="anchor-text view-full" href="https://github.com/Shailesh334/netflix-gpt" target="_blank">
+                    Live
+                </a>
+                </div>
                 <div class="tags">
                   <button>React</button>
                   <button>Firebase</button>
@@ -132,37 +168,36 @@
             </div>
           </div>
           <div class="view-full-container">
-            <a href="/" class="light-text view-full"><p>View Full Project Archive   </p> </a> <span> &rarr;</span>
+            <a href="https://github.com/Shailesh334?tab=repositories" target="_blank" class="light-text view-full"><p>View Full Project Archive   </p> </a> <span> &rarr;</span>
           </div>
         </section>
 
         <!-- EXPERIENCE -->
-        <section>
+        <section id="experience">
           <div class="light-text sticky-header">
             <h2>EXPERIENCE</h2>
           </div>
 
           <div class="experience-container">
             <div class="experience-card">
-                
-
-                <div class="experience-content">
-              
-
-                  <div class="experience-card">
-                    <div class="tenure">
+                   <div class="tenure">
                       <p>2024 - 2025</p>
                     </div>
 
-                    <div class="experience-content">
-                      <h4 class="light-text anchor-text">Commander at cpmc DYPCOE Akurdi ↗</h4>
+
+                <div class="experience-content card-column">
+              
+
+                  <div class="experience-card">
+                 
+                    <div class="experience-content card-column exp">
+                      <h4 class="light-text anchor-text">Commander at cpmc DYPCOE Akurdi <i
+                                    class="fa-solid fa-arrow-right anchor-icon"></i></h4>
                       <p>
                         Facilitated post-contest discussions , Coderooms, analyzing
                         problem-solving approaches, debugging solutions, and enhancing
                         the team’s understanding of efficient algorithms which enhanced
-                        my teamwork skills. - Led a team of 6 members, fostering a
-                        collaborative environment by guiding them through DSA concepts
-                        and helping them improve their problem-solving skills..
+                        my teamwork skills. 
                       </p>
                       <div class="tags">
                         <button>Competetive Programming</button>
@@ -171,27 +206,29 @@
                       </div>
                     </div>
                 </div>
-
-              <div class="view-full-container">
-                <a href="/" class="light-text view-full"><p>View Full Résumé   </p> </a> <span> &rarr;</span>
-              </div>
+                 
                 </div>
+                 <div class="view-full-container">
+                <a href="public/Shailesh_Resume.pdf" target="_blank" class="light-text view-full"><p>View Full Résumé   </p> </a> <span> &rarr;</span>
+               </div>
+              
         </section>
 
+        <footer>
+            <p>
+                  Coded in <a href="https://code.visualstudio.com/" target="_blank" class="footer-link">Visual Studio Code</a>
+                  by yours truly. <br />Built with HTML & CSS, and
+                  deployed with <a href="https://www.netlify.com" target="_blank" class="footer-link">Netlify</a>. <br />All
+                  Text is
+                  set in the <a href="https://rsms.me/inter/" target="_blank" class="footer-link">Inter</a> typeface.
+            </p>
+            <a href="#top-of-page" class="scroll-to-top">
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </footer>
       </main>
 
 
-    <footer>
-      <p>
-            Coded in <a href="https://code.visualstudio.com/" target="_blank" class="footer-link">Visual Studio Code</a>
-            by yours truly. <br />Built with HTML & CSS, and
-            deployed with <a href="https://www.netlify.com" target="_blank" class="footer-link">Netlify</a>. <br />All
-            Text is
-            set in the <a href="https://rsms.me/inter/" target="_blank" class="footer-link">Inter</a> typeface.
-      </p>
-      <a href="#top-of-page" class="scroll-to-top">
-         <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </footer>
+ 
   </body>
 </html>

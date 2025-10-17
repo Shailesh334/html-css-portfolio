@@ -240,10 +240,6 @@ section {
   cursor: pointer;
 }
 
-.exp {
-    min-width: 400px;
-      
-}
 .tags{
   display: flex;
   justify-content: start;
